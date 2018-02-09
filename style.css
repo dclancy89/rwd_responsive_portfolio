@@ -1,0 +1,166 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	font-size: 1.2rem;
+}
+
+h3, h4 {
+	background: linear-gradient(#B0B0B4, #878593, #B0B0B4);
+	margin: 0;
+	padding: 10px;
+	color: white;
+}
+
+.button {
+	background-color: #427C62;
+	border: 1px solid black;
+	border-radius: 10px;
+	color: white;
+	padding: 8px 10px;
+	text-decoration: none;
+	display: table;
+	margin: 0.5rem auto 2rem;
+	box-shadow: 2px 2px 8px black;
+}
+
+.clear {
+	clear: both;
+}
+
+#header .content {
+	width: 75rem;
+	display: block;
+	margin: 0 auto;
+}
+
+#header .content h1 {
+	float: left;
+	font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+
+#header .content h2 {
+	float: right;
+	text-align: right;
+}
+
+.container {
+	background: radial-gradient(circle, #1D0D11, #6F5964,#1D0D11);
+}
+
+.container > div, #footer .content {
+	width: 75rem;
+	display: block;
+	margin: 0 auto;
+	padding: 0 1rem;
+	
+
+}
+
+.container #about .photo {
+	display: inline-block;
+	width: 40%;
+	margin: 1rem 1rem 0 0;
+
+}
+
+.container #about .photo img {
+	width: 100%;
+	border: 5px solid #C0C0C0;
+}
+
+.container #about .desc {
+	display: inline-block;
+	width: 56%;
+	vertical-align: top;
+	margin-top: 1rem;
+	background: linear-gradient(to right, #fff, #DBCCDA);
+	height: 312px;
+}
+
+.container #about .desc p {
+	padding: 0 1rem;
+}
+
+#featured .port-item:nth-child(2) {
+	margin: 1rem 0.86rem 0;
+}
+
+#featured .port-item {
+	display: inline-block;
+	width: 23rem;
+	vertical-align: top;
+	margin: 1rem 0;
+	background: linear-gradient(to right, #fff,  #DBCCDA);
+}
+
+
+
+#featured .port-item img {
+	width: 100%;
+}
+
+#featured .port-item p {
+	padding: 0 0.5rem;
+	text-align: justify;
+}
+
+#featured .port-item p {
+	margin: 0;
+}
+
+#featured .port-item p:first-of-type {
+	height: 200px;
+	margin: 0.5rem 0.5rem 0;
+	text-align: justify;
+	font-size: 1.1rem;
+}
+
+#featured .port-item .tech {
+	padding: 0.5rem;
+	
+}
+
+#featured .port-item .tech img {
+	width: 18%;
+	padding: 0.2rem;
+}
+
+#footer ul {
+	text-align: center;
+}
+
+#footer .social img {
+	width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+#footer ul li {
+	display: inline-block;
+}
+
+#footer .contact li {
+	padding: 0 2px;
+}
+
+#footer .contact li a {
+	text-decoration: none;
+}
+
+#footer .contact li:first-child {
+	border-right: 1px solid black;
+	padding-right: 5px;
+}
+
+#footer a {
+	color: #000;
+}
+
