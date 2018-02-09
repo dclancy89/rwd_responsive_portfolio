@@ -33,19 +33,25 @@ h3, h4 {
 }
 
 #header .content {
-	width: 75rem;
-	display: block;
+	max-width: 75rem;
+	width: 100%;
+	display: table;
 	margin: 0 auto;
+	padding: 1rem;
 }
 
 #header .content h1 {
-	float: left;
+	display: table-cell;
+	width: 50%;
+	vertical-align: middle;
 	font-family: "Comic Sans MS", cursive, sans-serif
 }
 
 
 #header .content h2 {
-	float: right;
+	display: table-cell;
+	width: 50%;
+	vertical-align: middle;
 	text-align: right;
 }
 
@@ -54,8 +60,9 @@ h3, h4 {
 }
 
 .container > div, #footer .content {
-	width: 75rem;
-	display: block;
+	max-width: 75rem;
+	display: table;
+	border-spacing: 1rem;
 	margin: 0 auto;
 	padding: 0 1rem;
 	
@@ -80,7 +87,8 @@ h3, h4 {
 	vertical-align: top;
 	margin-top: 1rem;
 	background: linear-gradient(to right, #fff, #DBCCDA);
-	height: 312px;
+	min-height: 312px;
+	margin-left: 4px;
 }
 
 .container #about .desc p {
@@ -92,8 +100,8 @@ h3, h4 {
 }
 
 #featured .port-item {
-	display: inline-block;
-	width: 23rem;
+	display: table-cell;
+	width: 33%;
 	vertical-align: top;
 	margin: 1rem 0;
 	background: linear-gradient(to right, #fff,  #DBCCDA);
@@ -115,7 +123,7 @@ h3, h4 {
 }
 
 #featured .port-item p:first-of-type {
-	height: 200px;
+	min-height: 200px;
 	margin: 0.5rem 0.5rem 0;
 	text-align: justify;
 	font-size: 1.1rem;
@@ -133,6 +141,7 @@ h3, h4 {
 
 #footer ul {
 	text-align: center;
+	padding: 0;
 }
 
 #footer .social img {
@@ -164,3 +173,96 @@ h3, h4 {
 	color: #000;
 }
 
+
+@media screen and (max-width: 1023px) {
+	
+
+	#header .content h1 {
+		width: 25%;
+	}
+
+	#header .content h2 {
+		width: 75%;
+
+	}
+
+	.container > div, #footer .content {
+		display: block;
+		margin-top: 1rem;
+	}
+
+	#featured .port-item, #featured .port-item:nth-child(2) {
+		display: inline-block;
+		width: 46%;
+		margin: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 845px) {
+	body {
+		font-size: 1.1rem;
+	}
+
+	#header .content h1 {
+		font-size: 1.5rem;
+	}
+
+	#header .content h2 {
+		font-size: 1.25rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container #about .photo, .container #about .desc {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+		padding: 1rem 0;
+	}
+
+	.container #about .desc {
+		padding-top: 0;
+	}
+
+	.port-item h4, .port-item p.tech {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 545px) {
+	#header .content h1 {
+		font-size: 1.3rem;
+	}
+
+	#header .content h2 {
+		font-size: 1.1rem;
+	}
+
+	#featured .port-item, #featured .port-item:nth-child(2) {
+		width: 100%;
+		display: block;
+		margin: 0;
+	}
+
+	#featured .port-item:nth-child(2) {
+		margin: 1rem 0;
+	}
+
+	#featured .port-item p:last-child {
+		padding-bottom: 1rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#header .content h1, #header .content h2 {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	#footer ul li {
+		font-size: 1rem;
+	}
+
+}
